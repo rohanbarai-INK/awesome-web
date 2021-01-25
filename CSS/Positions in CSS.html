@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .container{background-color: khaki; height: 3333px;}
+        .bar{border:2px solid red; width: 150px; height: 150px; display: inline-block;}
+        /* RELATIVE POSITION : IT WILL MOVE THE TAG FROM ITS PRESENT LOCATION  */
+        #bar1{ position: relative;top:5px;left: 25px;}
+        /* ABSOLUTE POSTION: IT WILL MOVE THE TAG FROM IT PARENT LOCATION  i.e container in this case  */
+        #bar2{ position: absolute; top: 10px; left: 20px;}
+        /* FIXED POSITION: IT WILL MOVE THE TAG FROM BROWSER AND STAY IN SCREEN EVEN IF YOU SCROLL */
+        #bar3{position: fixed; bottom: 2px; right: 10px;}
+        /* STICKY POSITION: IT WILL MOVE TAG FROM THE RELATIVE POSTION AND STICK WITH THE SCREEN EVEN IF YOU SCROLL  */
+        #bar4{ position: sticky; top: 2px; left: 500px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar" id="bar1">Relative</div>
+    <div class="bar" id="bar2">absolute</div>
+    <div class="bar" id="bar3">fixed</div>
+    <div class="bar" id="bar4">sticky</div></div>
+</body>
+</html>

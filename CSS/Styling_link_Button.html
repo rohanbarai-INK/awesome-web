@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            width: 666px;
+            margin: 12px auto;
+            padding: 33px;
+        }
+        .btm{
+            background-color: yellow;
+            border-radius: 5px;
+            border: 1px solid red;
+            margin: 1px;
+            padding: 2px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        a{text-decoration: none;
+        color: black; 
+        float: right;
+        }
+        /* HOVER IS USE WHEN YOU TOUCH YOUR CURSOR IN THE BUTTON OR BOX IT WILL CHANGE PROPERTY TO YOUR SETTINGS */
+        .btm:hover{
+color: blue;
+background-color: rgb(173, 173, 171);
+border: 2px solid black;
+        }
+        /* VISITED IS USE TO CHANGE THE PROPERTY OF THE TAG WHEN IT CLICKED BEFORE  */
+        .btm:visited{
+            color: purple;
+            background-color: rgb(189, 158, 158);
+        }
+        /* ACTIVE IS USE WHEN YOU CLICK ON THE TAG OR AREA/BUTTON DURING THE CLICKING PERIOD THE PROPERTY WILL CHANGE TO YOUR DESIRE SETTINGS */
+        .btm:active{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, velit. Eaque hic libero vero eveniet et! Vitae, assumenda obcaecati. Tempore, minima veniam officiis ab quisquam maiores ducimus nobis libero veritatis debitis labore eius sunt?</p>
+        <a href="https://www.facebook.com" target="_blank" class="btm">Read More</a>
+        <button class="btm">Contact us</button>
+    </div>
+</body>
+</html>

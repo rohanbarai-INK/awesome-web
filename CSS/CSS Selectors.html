@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+<style>
+    /* Element Selector */
+    p{
+        border: solid 2px red;
+    }
+    /* Id selectorv */
+    #firstpara{
+        color: blue;
+    }
+    /* Class Selector  */
+    .yellow{
+        background-color: yellow;
+    }
+    /* Grouping Selector  */
+    footer,p{
+color: purple;
+    }
+    .yellow.blue{
+        color: purple;
+    }
+</style>
+</head>
+<body>
+    <p id="firstpara" class="yellow">This is a Paragraph</p>
+    <p class="yellow blue">This is another Paragraph</p>
+    <p>This is yet another Paragraph</p>
+    <footer> this is footer</footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Border & Backgrounds</title>
+    <style>
+        #firstpara{
+background-color:red;
+height: 200px;
+width: 300px;
+border: 2px solid green;
+/*border-style: solid;
+border-color: green;
+border-width: 3px;*/
+border-radius: 11px;
+        }
+        #secondpara{
+            background-color: blue;
+            border-top: 3px solid violet;
+            border-bottom: 3px solid rgb(111, 69, 151);
+            border-left: 3px solid yellow;
+            border-right: 3px solid yellow;
+            height: 200px;
+            width: 300px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius  : 15px;
+        }
+        #thirdpara{
+            height: 500px;
+            width: 300px;
+            /* you can use web image or folder image  by using this command  */
+            background-image: url(https://images.wallpapersden.com/image/download/4k-kyojuro-rengoku-ultra_bGluaWeUmZqaraWkpJRpbGpqrWdrbWU.jpg);
+            border: 2px solid blue;
+            background-repeat: no-repeat; /*repeat-x and repeat-y will make the image repeat in x and y axis*/
+            background-position:  center top;/* center top are in place of x and y axis you can use any command like top bottom,left right */
+        }
+    </style>
+</head>
+<body>
+    <h3>this is heading</h3>
+    <p id="firstpara">this is Paragraph</p>
+    <h3>this is heading</h3>
+    <p id="secondpara">this is second Paragraph</p>
+    <h3>this is heading</h3>
+    <p id="thirdpara">this is third Paragraph</p>
+</body>
+</html>

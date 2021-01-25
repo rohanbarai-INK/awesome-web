@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+</head>
+<style>
+    .container{background-color: red; display: flex;}
+    .box{width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 2px solid blue;
+    animation-name: rohan; /*animation tag name to control tag properties of its parent i.e .box*/
+    animation-duration: 2s;/* animation  Time to complete the process*/
+    animation-timing-function: ease-in; /*ease in- animation get fast at end*/
+    animation-timing-function: ease-out;/*ease out- animation get fast at start*/
+    animation-delay: 1s;/* duration after animation starts*/
+    animation-iteration-count: 1;/*iteration means travel.... how many time to do animation*/
+    /* animation-direction: reverse; */
+    animation-fill-mode:backwards;/*its mean animation will get back to is original position*/
+    animation-fill-mode:forwards;/*its mean animation will stay as it is [end point]*/
+    animation: rohan 2s ease-in 1s 1 forwards;
+    /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+    }
+    @keyframes rohan {
+        from{
+        width: 200px;
+        }
+        to{
+        width: 1200px;
+        }
+    }
+
+    #box{
+        animation: circle1 4s ease 3s 1 forwards;
+        position: relative;
+        width: 200px;
+        height: 204px;
+        background-color: blue;
+    }
+    /* you can set animation with percentage to get perfect animation upto 100 movement by setting 1% each  */
+    @keyframes circle1 {
+        0%{top:0px;
+        right: 10px;}
+        25%{top: 500px;
+        right: 10px;}
+        75%{top: 500px;
+        right: 1166px;}
+        100%{
+            top:0px;
+            right:1166px;
+        }
+    }
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">This is Box</div>
+        <div id="box"> this is box  </div>
+    </div>
+</body>
+</html>

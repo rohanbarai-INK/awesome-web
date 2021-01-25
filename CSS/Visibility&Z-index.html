@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblilty & Z-index</title>
+    <style>
+        .box{
+            width: 170px;height: 170px;}
+            /* z-index: will only work if you assign position: relative also ITS WORK IN ABOSULTE  ;; */
+        #box1{background-color:  red; position: relative; top: 50px;z-index: 1; text-align:center;}/*the one with big value will overwrite other*/
+        #box2{background-color:  black; position: relative;z-index: 0;}/* value is low that why red overwrite black*/
+        #box3{background-color:  yellow; display: none;}/* Display none will hide element along with space so you use that space for others*/
+        #box4{background-color:  blue; visibility: hidden;} /*visiblity: hidden will hide the element but space will not be hidden*/
+    </style>
+</head>
+<body>
+        <div class="box" id="box1">overlaping</div>
+        <div class="box" id="box2">asdsadasd</div>
+        <div class="box" id="box3">asdsadasd</div>
+        <div class="box" id="box4">asdsadasd</div>
+</body>
+</html>

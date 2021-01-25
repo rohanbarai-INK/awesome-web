@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox CSS</title>
+    <style>
+      .container {
+        height: 500px;
+        border: 2px solid red;
+        display: flex; /*Intialize the container as a flexbox*/
+
+        /* Flex properties for flex container  */
+
+        flex-direction: row; /*default value of flex direction is row*/
+        /* flex-direction: column; 
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; to wrap page or to expand or shrink page depending upon the screen size  */
+
+        flex-flow: row nowrap; /*shortcut or shorthand of both above properties with one command*/
+
+        /* justify-content will justify the content in horizontal direction */
+        justify-content: center; /*it will change the box postion to center for there relative position*/
+        /* justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+
+        /* align-items: will justify the content in vertical direction;  */
+        align-items: center;
+        /* align-items: flex-end;
+        align-items: flex-start;  [its default value]
+        align-items: stretch; */
+      }
+      .box {
+        background-color: blue;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+        width: 100px;
+        height: 100px;
+      }
+
+      /* Flex properties for a Flex item  */
+      #box-1 {
+        order: 2;
+        flex-grow: 1;
+      } /*higher the order later it go the container*/
+      #box-2 {
+        order: 0;
+        flex-shrink: 1;
+      }
+      #box-3 {
+        order: 1; /* it will go middle as it is between 0 to 2 */
+        flex-basis: 230px;
+        /* when flex-direction: is set to row flex-basis: will control width:  */
+        /* when flex-direction: is set to column flex-basis: will control height:  */
+
+        flex: 2 2 220px; /*with flex you can set all three in order grow-shrink-basis*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">First</div>
+      <div class="box" id="box-2">Second</div>
+      <div class="box" id="box-3">Third</div>
+      <!-- <div class="box" id="box-4">Fourth</div>
+      <div class="box" id="box-5">Fifth</div>
+      <div class="box" id="box-6">Sixth</div> -->
+    </div>
+  </body>
+</html>

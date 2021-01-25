@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        body{background-color: black;}
+        #item{
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            color: red;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            /*you can take property like background-color color width,height,font size etc anything with visible properties*/
+            transition-property:background-color;
+            transition-duration: 2s;/* duration of the transition*/
+            transition-timing-function: ease-in-out;/*motion of the transition */
+            transition-delay: 0.1s;/*transition is delay when you touch*/
+            transition: all 0.5s ease-in-out 0.1s;/*shortcut property-duration-function-delay*/
+            padding: 2px 2px;
+        }
+        
+        #item:hover{background-color: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        font-size: 22px;
+        padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item">This is CSS Trainstion</div>
+    </div>
+</body>
+</html>

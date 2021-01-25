@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      input {
+        color: black;
+        border: 2px solid red;
+        display: block;
+      }
+      .container {
+        display: block;
+        margin: auto ;
+        width: 15%;
+      }
+      /*Attribute Selector*/
+      input[type="text"] {
+        color: red;
+      } /*use [] will help you select attribute*/
+      a[target] {
+        color: black;
+      }
+      /* li:nth-child() tag only work if its use under ul tag otherwise it will not change the properties */
+      li:nth-child(1){
+          color: cyan;
+      }/*using nth-child(n), n will be any number it will change nth row */
+      li:nth-child(2n+0){
+        color: darkblue;
+      }/*using nth-child(2n+0), 2*n+0 will be use as mathematical formula,2 will multiply with all number digits 2*1,2*2*/
+      li:nth-child(3n+0){color: red;}
+      /*3*n+0= 3,6,9,12,15,18*/
+      li:nth-child(odd){color: black;}
+      /*odd number will be selector of the tag */
+      li:nth-child(even){color: cyan;}
+      /*even number will be selector of the tag */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2><a href="http://google.com" target="_blank">Go to Google</a></h2>
+      <form action="">
+        <input type="text" placeholder="Enter your Name" />
+        <input type="password" placeholder="Enter your password" />
+        <input type="submit" value="submit" />
+      </form>
+      <ul>
+      <li class="class1" id="line-1">One</li>
+      <li class="class1" id="line-2">Two</li>
+      <li class="class1" id="line-3">Three</li>
+      <li class="class1" id="line-4">Four</li>
+      <li class="class1" id="line-5">Five</li>
+      <li class="class1" id="line-6">Six</li>
+      <li class="class1" id="line-7">Seven</li>
+      <li class="class1" id="line-8">Eight</li>
+      <li class="class1" id="line-9">Nine</li>
+      <li class="class1" id="line-10">Ten</li></ul>
+    </div>
+  </body>
+</html>

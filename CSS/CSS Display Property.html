@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        /* DISPLAY BLOCK TAKE ALL THE PORTION OF SCREEN WHERE TEXT WRITTEN AND ALSO EMPTY SPACE IN STRAIGHT LINE  */
+        /* TO OVERCOME THAT WE USE INLINE-BLOCK TO CHANGE IT PROPERTY */
+        h3{ text-align: center;margin: 0px;}
+        header{margin: auto; width: 1200px; border: 2px solid red; }
+        img.logo{display: block; margin: auto;}
+.container{width: 1200px;box-sizing: border-box; margin: auto;}
+/* WE USE INLINE-BLOCK TO RESIZE THE TAG WITH WIDTH FROM A BLOCK-DISPLAY */
+.box{display: inline-block; width: 32.25%;margin: 4px auto; border: 1px solid black; padding: 2px 4px;background-color: rgb(180, 171, 158);}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="giphy.gif" alt="" width="30px" class="logo">
+        <h3>This is Rohan's blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex, alias architecto aliquid dignissimos facere id aperiam non molestias fugit labore, voluptatibus fugiat nulla? Similique earum voluptas corporis architecto, sunt a impedit sequi quas? Enim neque laboriosam omnis repellat, harum debitis eius officiis vel!</p></div>
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex, alias architecto aliquid dignissimos facere id aperiam non molestias fugit labore, voluptatibus fugiat nulla? Similique earum voluptas corporis architecto, sunt a impedit sequi quas? Enim neque laboriosam omnis repellat, harum debitis eius officiis vel!</p></div>
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex, alias architecto aliquid dignissimos facere id aperiam non molestias fugit labore, voluptatibus fugiat nulla? Similique earum voluptas corporis architecto, sunt a impedit sequi quas? Enim neque laboriosam omnis repellat, harum debitis eius officiis vel!</p></div>
+    </div>
+</body>
+</html>
+
+<!-- BLOCK DISPLAY TAKE ALL THE SPACE BUT INLINE DISPLAY TAKE ONLY SPACE WHERE ITS WRITTEN  -->
+<!-- WE CAN MAKE ABLE TO USE MARGIN AUTO FUNCTION JUST BY USING WIDTH IN BLOCK DISPLAY  -->
+<!-- INLINE-DISPLAY ARE NOT GOING TO CENTER WITHOUT CONVERTING INTO BLOCK DISPLAY THEN MARGIN TO AUTO ..   -->
+
+<!-- ALWAYS CHANGE MAIN TAG PROPERTY TO USE SUB TAG PROPERLY SEE THE SYNTAX OF STYLE ABOVE -->

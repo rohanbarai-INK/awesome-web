@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Size in CSS</title>
+    <style>
+      .html {
+        font-size: 20px;
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
+        font-size: 10px;
+        border: 2px solid red;
+        width: 100vw; /*it will cover the whole width of browser according to size from mobile to pc*/
+        height: 100vh;/*it will cover the whole height of browser according to size from mobile to pc*/
+        /*100vh or vw is nothing but percentage that cover the repective areas but reponsive is plus point*/
+      }
+      #row1 {
+        font-size: 3em; /* em will multiple pixel with parent i.e 10px*3= 30px */
+        padding: 3em; /* it will multiple with font-size and parent i.e 3em*3em*10px =90px */
+      }
+
+      #row2 {
+        font-size: 3rem; /* rem will multiple itself with html pixel*/
+        padding: 3rem; /* rem will multiple itself with html pixel*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="row1">This is First Heading</h2>
+      <h2 id="row2">This is Second Heading</h2>
+      <h2 id="row3">This is Third Heading</h2>
+      <h2 id="row4">This is Forth Heading</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      .navpoint {
+        background-color: black;
+        border-radius: 20px;
+      }
+      /* TO REVERT BACK BACKGROUND COLOR USE OVERFLOW COMMAND TO AUTO IN HIS TAG SO IT WILL APPEAR  */
+      .navpoint ul {
+        overflow: auto;
+      }
+      /* WHEN YOU FLOAT LINE YOUR NAVPOINT BACKGROUND COLOR DISAPPEAR */
+      .navpoint li {
+        color: red;
+        float: left;
+        list-style: none;
+        /* padding: 2px 5px; */
+        margin: 12px 3px;  } 
+/* MARGIN SHOULD BE USE IN TAG  */
+      .navpoint li a {
+        text-decoration: none;
+        color: red;
+        padding: 5px 3px;
+      }
+      /* PADDING SHOULD BE DONE HERE FOR POSITIONING  */
+
+      .search1 {
+        float: right;
+      }
+
+      .navpoint input {
+        border: 2px solid black;
+        padding: 9px;
+        width: 359px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right: 45px;
+        border-radius: 20px;
+      }
+
+      .search1 label {
+        color: red;
+        padding-right: 6px;
+        padding-left: 2px;
+      }
+
+      .navpoint a:hover {
+        color: blue;
+      }
+
+      .navpoint input:hover {
+        border: 2px solid red;
+      }
+
+      .navpoint label:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- WHEN MAKING NAVIGATION YOU CREATE HEADER INSIDE IT YOU MAKE NAV THEN OTHER  -->
+    <header>
+      <nav class="navpoint">
+        <!-- ASSIGN CLASS SO YOU CAN ORGANIZE WHOLE NAV LIKE FLOAT-->
+
+        <ul>
+          <li><a href="#" class="bar1">Home</a></li>
+          <li><a href="#" class="bar1">Category</a></li>
+          <li><a href="#" class="bar1">Services</a></li>
+          <li><a href="#" class="bar1">Contact Us</a></li>
+          <div class="search1">
+            <label for="search">Search</label
+            ><input
+              type="text"
+              name="Search"
+              id="search"
+              placeholder="Search from here"
+            />
+          </div>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on Selectors</title>
+    <style>
+      h2 {
+        background-color: red;
+        color: black;
+        text-align: center;
+        font-weight: bolder;
+      }
+
+      div p {
+        background-color: blue;
+      }/* p is contained by any tag but its parent is div then its property will change*/
+
+      div li p {
+        background-color: yellow;
+      }/* p is contained by li which is contained by div then its property will change */
+      div > ul {
+        background-color: teal;
+      }/* ul is contained by div directly */
+      div + p {
+        background-color: violet;
+      }/* if p is the sibling of div then property will change */
+    </style>
+  </head>
+  <body>
+    <h2>More Details of CSS Selectors</h2>
+    <div class="container">
+      <div class="row">
+        <ul>
+          this is Paragraph inside Ul
+          <li><p>this is Paragraph inside li</p></li>
+        </ul>
+        <p>this is Paragraph inside Div.row</p>
+      </div>
+      <p>This is Paragraph inside div.container</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aldrich" />
+    <style>
+        body{font-family: Aldrich;}
+.container{border: 2px solid black;
+background-color: rgb(19, 136, 165);
+width: 600px;
+/* height: 581px; */
+/* WHEN YOU SET MARGIN TO AUTO IT WILL WILL TAKE ALL THE CONTENT TO MIDDLE OF THE AXIS, YOU CAN USE Y-AXIS LEAVING X-AXIS AS AUTO FOR PROPER MARGIN TO TOP AND BOTTOM*/
+margin:33px auto;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+#fruits{
+    float: left;
+    width: 45% ;
+    margin: 12px 13.5px;
+    color: yellow;
+    height: 465px;
+
+}
+/* WHEN YOU USE FLOAT LEFT OR RIGHT ALL THE COLUMN SHOULD BE IN 100% SPACE  */
+#computer{float: left;
+    width: 47%; color: yellow;}
+    
+#stationary{float: left;
+/* CLEAR BOTH WILL SEPARATE HIMSELF FROM OTHER COLUMN preventing from coliding with each other */
+clear: both;
+    width: 98%  ;color: yellow;}
+    #glass{
+        width: 98%;
+        clear: both;
+        color: yellow;
+    }
+
+.item{
+    border: 3px solid black;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background-color: rgb(7, 37, 209);
+    
+}
+p,h3{
+    text-align: left;
+}
+h3{text-decoration: underline;}
+h1{
+    margin: auto;
+    width: 252px;
+    color: red;
+    text-decoration: underline; text-decoration-color: sandybrown;
+}
+.para{color: orangered;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            General Store
+        </h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae iste reprehenderit commodi corporis minima officia sed consectetur cumque suscipit, placeat repellendus obcaecati libero cupiditate, nihil eius maxime quaerat voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus cum quidem consequatur. Magnam commodi iusto eligendi aut enim ullam id, quam nobis assumenda provident voluptatum repudiandae ipsam obcaecati numquam!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae iste reprehenderit commodi corporis minima officia sed consectetur cumque suscipit, placeat repellendus obcaecati libero cupiditate, nihil eius maxime quaerat voluptatibus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi perspiciatis numquam, tenetur nobis expedita explicabo. Numquam qui expedita magni possimus, officiis iure a, deleniti praesentium asperiores, nulla nobis alias.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae iste reprehenderit commodi corporis minima officia sed consectetur cumque suscipit, placeat repellendus obcaecati libero cupiditate, nihil eius maxime quaerat voluptatibus?</p>
+        </div>
+        <div id="glass" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae iste reprehenderit commodi corporis minima officia sed consectetur cumque suscipit, placeat repellendus obcaecati libero cupiditate, nihil eius maxime quaerat voluptatibus?</p>
+        </div>
+    </div>
+</body>
+</html>

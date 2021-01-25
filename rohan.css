@@ -1,0 +1,39 @@
+ul {
+  color: blue;
+}
+#bold {
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline overline;
+}
+.span1 {
+  font-family: Aldrich;
+  font-size: small;
+  margin-right: 20%;
+}
+body {
+  background-image: url(https://images.wallpapersden.com/image/download/anime-shouko-nishimiya_a25qbGeUmZqaraWkpJRmbmdlrWZlbWU.jpg);
+  background-size: cover;
+}
+.column {
+  float: left;
+  padding: 0px 0px 0px 100px;
+}
+.row {
+  clear: both;
+  display: table;
+}
+nav {
+  background-color: rgb(19, 13, 13);
+  overflow: auto; padding: 12px 12px; border-radius: 30px;  
+}
+
+nav li {
+  float: left; list-style: none; margin-top: 2px;
+}
+nav a{margin: 2px 12px; color: red; text-decoration: none;}
+nav input{ float: right; padding: 2px 12px; margin-right: 5px; width: 300px; border-radius: 12px;margin-bottom: 2px;}
+nav a:hover{ color: white;}     
+.table{ padding-left: 602px; border: 1px solid red; display: inline-block; }
+div h2.table1{ float: right;padding-bottom: 23px; padding-right: 2px;}
+.table2{ position: relative; left: 1000px; }

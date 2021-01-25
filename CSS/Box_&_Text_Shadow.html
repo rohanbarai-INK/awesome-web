@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+< lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow & Text Shadow</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .item {
+      background: burlywood;
+      margin: 12px 10px;
+      padding: 12px 12px;
+      box-shadow: 3px 3px green;/* shadow-x shadow-y color*/
+      box-shadow: -3px -3px green; /* negative will change it position oposite to it previous position like x-left to x-right etc*/
+      box-shadow: 4px 4px 5px red; /* shadow-x shadow-y blur-density color */
+      box-shadow: 4px 4px 4px 4px blue; /* shadow-x shadow-y blur-density shadow-allside color*/
+    }
+    div h2{text-shadow: 2px 2px white;/* shadow-x shadow-y color*/
+        text-shadow: -2px -2px white; /* negative will change it position oposite to it previous position like x-left to x-right etc*/
+        text-shadow: 2px 2px 2px white;/* shadow-x shadow-y blur-density color */
+        text-shadow: 2px 2px 2px 1px white; /* shadow-x shadow-y blur-density shadow-allside color*/
+    }
+      div p{text-shadow: 1px 1px 1px white;}
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="box1">
+        <h2>First</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+          assumenda atque ipsum ab possimus vero unde facilis beatae temporibus
+          dolores minima, quisquam nihil omnis odit molestiae ipsa provident,
+          quibusdam asperiores quae voluptatem ratione libero!
+        </p>
+      </div>
+      <div class="item" id="box2">
+        <h2>Second</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+          assumenda atque ipsum ab possimus vero unde facilis beatae temporibus
+          dolores minima, quisquam nihil omnis odit molestiae ipsa provident,
+          quibusdam asperiores quae voluptatem ratione libero!
+        </p>
+      </div>
+      <div class="item" id="box3">
+        <h2>Third</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+          assumenda atque ipsum ab possimus vero unde facilis beatae temporibus
+          dolores minima, quisquam nihil omnis odit molestiae ipsa provident,
+          quibusdam asperiores quae voluptatem ratione libero!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
