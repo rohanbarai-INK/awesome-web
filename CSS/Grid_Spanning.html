@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,2fr);
+            grid-template-rows: repeat(3,2fr);
+            grid-row-gap: 1rem;/*to gap between two rows*/
+            grid-column-gap: 1rem;/*to gap between two columns*/
+
+        }
+        .item{
+            background-color: royalblue;
+            border: 2px solid red;
+            padding: 22px;
+        }
+        .item:first-child{
+            grid-column-start: 1;/*it will start with first start of box-1*/
+            grid-column-end: 3;/*it will end at the start of box-3*/
+            grid-row-start: 1;/*it will start with first start of box-1*/
+            grid-row-end: 3;/*it will end at the start of box-3*/
+
+            /*SHORTCUT*/
+            grid-column: 1 / span 3;/*span mean it will take 3 box of space for one*/
+            grid-row: 1 / span 3;/*span mean it will take 3 box of space for one*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">box-1</div>
+        <div class="item">box-2</div>
+        <div class="item">box-3</div>
+        <div class="item">box-4</div>
+        <div class="item">box-5</div>
+        <div class="item">box-6</div>
+        <div class="item">box-7</div>
+        <div class="item">box-8</div>
+        <div class="item">box-9</div>
+        <div class="item">box-10</div>
+        <div class="item">box-11</div>
+        <div class="item">box-12</div>
+        <div class="item">box-12</div>
+        <div class="item">box-12</div>
+        <div class="item">box-12</div>
+    </div>
+</body>
+</html>

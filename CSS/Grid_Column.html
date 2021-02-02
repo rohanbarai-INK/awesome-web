@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to GRID</title>
+  </head>
+  <style>
+    .container {
+        /*display grid will enable grid attribute to tweak*/
+      display: grid;
+      /*THIS WILL SET WIDTH OF THREE COLOUMN */
+      grid-template-columns: 100px 130px 350px;
+      /*auto will take all the space in horizontal way*/
+      grid-template-columns: 100px auto 150px;
+       /*with repeat you can select all the column with its width i.e repeat(coloumn_number, width)*/
+      grid-template-columns: repeat(10, auto);
+      grid-template-columns: repeat(3,auto);
+      /* it will divide in columns in ratio of 1:2:1  */
+      grid-template-columns: 1fr 2fr 1fr;
+      /* it will make a gap from y-axis for all columns  */
+      grid-gap: 22px;
+    }
+    /* IMPORTANT INFO */
+    /* GRID PROPERTY WILL ONLY WORK ON PARENT TAG WHERE ITS DISPLAY IS GRID  */
+
+    .box {
+      background-color: cyan;
+
+      margin: 4px;
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">this is item-1</div>
+      <div class="box">this is item-2</div>
+      <div class="box">this is item-3</div>
+      <div class="box">this is item-4</div>
+      <div class="box">this is item-5</div>
+      <div class="box">this is item-6</div>
+      <div class="box">this is item-7</div>
+      <div class="box">this is item-8</div>
+      <div class="box">this is item-9</div>
+      <div class="box">this is item-10</div>
+    </div>
+  </body>
+</html>

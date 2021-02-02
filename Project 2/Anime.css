@@ -1,0 +1,322 @@
+/* CSS RESET  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.part1{
+    height: 97vh;
+}
+/* NAVIGATION BAR  */
+#navbar::before{
+    content:"";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+}
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center ;
+}
+
+/* LOGO AND IMAGE  */
+#logo{
+    display: flex;
+    margin: 7px 33px;
+}
+#logo img {
+height: 50px;
+border-radius:50% ;
+margin: 4px 5px;
+}
+/* LIST STYLING  */
+ul{
+    display: flex;
+    animation: slide 2s ease-in 0.5s 1 forwards;
+}
+@keyframes slide {
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1.0;
+}
+}
+
+.item{
+    
+    list-style: none;
+    font-size: 1.1rem;
+    margin: 0px 9px;
+}
+.item a {
+    text-decoration: none;
+    font-family: 'Londrina Solid', cursive;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.5s ease-in-out 0s;
+   
+}
+.item a:hover {
+  background-color: white;
+  color: black;
+  border-left:1px solid yellow;
+  border-bottom: 1px solid yellow;
+  border-top: 1px solid blue;
+  border-right: 1px solid blue;
+}
+
+/* SECTION PAGE  */
+#home::before{
+    content:"";
+    position: absolute;
+    background:url('Section_image.gif')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.89;
+    top: 0px;
+    left:0px;
+
+    }
+#home{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 50px;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    font-family: "Allerta Stencil";
+    line-height: 14.1mm;
+}
+#mobile1{ display: none;}
+#home p{
+    color: wheat;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Allerta Stencil";
+}
+.btn:hover{
+    color: yellow;
+    background-color: black;
+    box-shadow: 1px 1px 1px ;
+    animation: rotate1 2s ease 0.1s infinite  forwards;
+    cursor: pointer;
+}
+@keyframes rotate1 {
+    25%{
+        border-left:2px solid yellow;
+        border-bottom: 2px solid yellow;
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+    }
+    50%{
+        border-left:2px solid blue;
+        border-bottom: 2px solid yellow;
+        border-top: 2px solid blue;
+        border-right: 2px solid yellow;
+    }
+    75%{
+        border-left:2px solid blue;
+        border-bottom: 2px solid blue;
+        border-top: 2px solid yellow;
+        border-right: 2px solid yellow;
+    }
+    100%{
+        border-left:2px solid yellow;
+        border-bottom: 2px solid blue;
+        border-top: 2px solid yellow;
+        border-right: 2px solid blue;
+    }
+}
+
+#services{
+    display: flex;
+    margin: 12px;
+}
+
+#services .box{
+    border: 2px solid red;
+    background: #00000085;
+
+    z-index: 1;
+    padding: 33px;
+    margin: 5px;
+    border-radius: 22px;
+   
+    
+}
+#services .box #figure{
+    height: 9.375rem;
+   display: block;
+   margin: auto;
+}
+
+video {
+    
+    object-fit: cover;
+    width: 100vw;
+    max-width: 1920px;
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+    
+}
+#services p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+   color: #45efef;
+    font-size: 0.9rem;
+}
+/* CLIENT SECTION  */
+.client{
+    border:2px solid yellow ;
+    border-radius: 22px;
+    animation: circle2 2s ease-in-out 0.5s infinite forwards;
+}
+@keyframes circle2 {
+    25%{
+        border-left:2px solid yellow;
+        border-bottom: 2px solid yellow;
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+    }
+    50%{
+        border-left:2px solid blue;
+        border-bottom: 2px solid yellow;
+        border-top: 2px solid blue;
+        border-right: 2px solid yellow;
+    }
+    75%{
+        border-left:2px solid blue;
+        border-bottom: 2px solid blue;
+        border-top: 2px solid yellow;
+        border-right: 2px solid yellow;
+    }
+    100%{
+        border-left:2px solid yellow;
+        border-bottom: 2px solid blue;
+        border-top: 2px solid yellow;
+        border-right: 2px solid blue;
+    }
+}
+.client{
+    max-width: 119.75rem;
+    max-height: 17.4375rem;
+    width: 100vw;
+    height: 100vh; }
+
+#client{
+    display: flex;
+    justify-content: center;
+align-items: center;
+padding: 10px;
+
+
+}
+.client-items{
+    flex-direction: column ;
+    ;
+}
+.client img{
+    height: 6.5625rem;
+}
+ /* CONTACT SECTION  */
+ #contact{
+     position: relative;
+     padding-bottom: 22px;
+     
+ }
+ #contact h2{
+     padding: 22px;
+     text-shadow: 1px 1px white;
+ }
+ 
+ #contact::before{
+     content: "";
+     position: absolute;
+     width: 98.8vw;
+     width: 100vw;
+     max-width: 1920px;
+     height: 84vh;
+     background: url('banner.jpg') no-repeat center center/cover;
+     
+     opacity: 0.5;
+     z-index: -1;
+
+ }
+ .contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .contact-box input{
+     width: 100%;
+     margin-bottom: 2px;
+     border-radius: 5px;
+     
+ }
+ .contact-box textarea{width: 100%;
+    border-radius: 5px;
+
+ }
+ .contact-box label, .contact-box textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-family: 'Londrina Solid', cursive;
+ }
+/* FOOTER SECTION  */
+footer{ background-color: black;
+color: white;
+position: relative;
+bottom: 1.5rem;
+
+}
+
+
+/* UTILITY  */
+.services{
+    
+    display: flex;
+    flex-direction: column;
+    /* bottom: -81px;
+    position: relative; */
+   }
+
+.Primary{
+    font-size: 2.2rem;
+    padding: 10px;
+   z-index: 1;
+   text-shadow: 1px 1px white;
+       font-family: "Allerta Stencil";
+
+}
+.btn{
+    background-color:black;
+    opacity: 0.4;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 22px;
+    margin: 22px;   
+    font-size: 0.9rem;
+    transition: all 0.5s ease 0.5s;
+}
+.secondary{
+    font-size: 1.6rem;
+    padding: 20px;
+    text-shadow: 2px 2px white;
+    font-family: 'Londrina Solid', cursive;
+}
+    .center{
+        text-align: center;
+    }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{font-size: 1em;}
+        .container{display: grid;
+        grid-gap: 12px; 
+        
+        grid-template-areas:
+        'navbar  navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        }
+        .item{background-color: coral;border: 2px solid blue;}
+        #navbar{grid-area: navbar; padding: 1em;}
+        #section{grid-area: section;}
+        #aside{grid-area: aside;}
+        footer{grid-area: footer;}
+        @media only screen and (min-width: 480px) and (max-width: 768px) {
+        body {
+          background-color: red;
+          
+          display: block;
+        }
+        .container{display: grid;
+        grid-gap: 22px; 
+        
+        grid-template-areas:
+        'navbar  navbar navbar navbar'
+        'section section section section'
+        'footer footer footer footer'
+        }
+        #aside{display: none;}
+      }
+      /*we have to change width-height in every command to respective device*/
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        body {
+          background-color: yellow;
+          
+          color: black;
+          display: block;
+        }
+      }
+      @media only screen and (min-width: 992px) and (max-width: 1280px) {
+        body {
+          background-color: rgb(87, 55, 230);
+         
+          display: block;
+        }
+        .container{display: grid;
+        grid-gap: 22px; 
+        
+        grid-template-areas:
+        'navbar  navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        }
+      }
+      /* @media will be use for reponsive website*/
+      @media only screen and (min-width: 1280px) {
+        body {
+          background-color: black;
+         
+         
+          display: block;
+        }
+      }
+
+        
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div id="navbar" class="item">
+                Home Contact Category Help
+            </div>
+            <div id="section" class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime asperiores soluta quisquam laborum illum ut mollitia ullam, corporis aut commodi quia reiciendis id ab eum iste voluptate minus at repellat a deleniti quam! Quia numquam, recusandae quas distinctio minima aliquid architecto blanditiis atque eveniet incidunt aspernatur cupiditate commodi ipsum? Facere assumenda velit necessitatibus vero consequuntur numquam accusamus, amet omnis? Tempore officia, eligendi porro omnis, numquam odio adipisci dolores asperiores voluptates suscipit esse quae consectetur distinctio ad! Praesentium iste harum exercitationem sunt dolor necessitatibus recusandae dicta dolorum, adipisci at culpa accusantium libero obcaecati deleniti ab atque nam laborum quae commodi magni! Amet autem laboriosam laudantium cupiditate voluptatum, consectetur ipsam aspernatur est perferendis a! Accusantium, pariatur et. Commodi quam temporibus necessitatibus asperiores impedit nam dolore ipsum eius labore! Optio deleniti fugiat dignissimos aspernatur voluptatem soluta error ipsum sunt sapiente. Architecto natus earum aperiam inventore cupiditate laboriosam, sunt quod assumenda. Incidunt, expedita minima. Minima facere atque laboriosam assumenda similique officia dicta veritatis quos. Officia ex consequatur magnam unde esse facilis ad inventore quo accusantium distinctio explicabo autem neque, dicta fugiat at ducimus iste? Perferendis exercitationem cum in odit, et iure rerum officia odio incidunt numquam nesciunt a delectus nemo! Ullam suscipit itaque fuga impedit consectetur blanditiis, qui nihil nisi accusantium nemo. Delectus quisquam est voluptatum excepturi eveniet dicta. Nisi laudantium, temporibus magnam, et aperiam nihil quas odit mollitia necessitatibus, quod unde nostrum. Provident nesciunt fuga rem iste autem, a quaerat facere voluptatibus eligendi vitae exercitationem iure quo temporibus commodi aliquam dignissimos aspernatur illo numquam. Odit vero aliquid sunt veniam similique esse, fuga aut eius reprehenderit illum, dicta quae et maxime laboriosam consequatur! Commodi excepturi nobis dolorem voluptate natus placeat rerum ea molestias, assumenda ipsum dignissimos optio architecto blanditiis. Sapiente assumenda et natus fugit vitae a excepturi aliquam tenetur molestias odio quo commodi deserunt accusamus, omnis saepe, iusto dolores? Et quis quibusdam laboriosam ipsum laborum dolorem eveniet dignissimos blanditiis officiis officia ipsa facilis accusantium sed magni deserunt libero aspernatur, quisquam assumenda quasi molestiae debitis nihil, maxime inventore labore. Porro dolores doloribus tenetur, rem distinctio amet! Expedita, eaque explicabo! Odio rem aperiam minima? Aspernatur ipsam officiis, iusto recusandae eum exercitationem magni quos hic sequi quam temporibus mollitia nam nihil quod ipsum veniam ab saepe ratione alias! Facere quae, minus delectus aut dolor deserunt optio labore dolores eum! Provident eos veniam sint perferendis illo, at exercitationem consequuntur blanditiis temporibus facere libero recusandae soluta nam, quo facilis!</div>
+            <div id="aside" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolore provident expedita similique explicabo natus, facere perspiciatis quos ullam harum reprehenderit quasi neque voluptates soluta voluptas quae assumenda inventore est dolores, nam deserunt! Optio repudiandae harum aut, ad assumenda culpa deleniti ipsam recusandae molestiae placeat officia repellendus incidunt ut veritatis ullam aspernatur vitae libero sunt beatae ea praesentium eligendi reprehenderit. Tempora quam nulla delectus modi ut vitae corrupti fuga culpa, a sed fugiat. Suscipit cumque porro temporibus quam voluptates obcaecati saepe animi, natus voluptatibus qui officiis fugiat iusto, beatae, vitae corrupti. Hic exercitationem veritatis voluptates magnam recusandae quaerat tenetur unde, assumenda consectetur modi expedita alias sed sapiente obcaecati ut impedit amet qui deserunt, porro odit. Adipisci officiis vero iusto tenetur optio. Consequatur, suscipit ex pariatur atque, quidem saepe modi expedita aut recusandae impedit unde iure adipisci eaque maxime id ut beatae! Ut rem ipsa et non vel assumenda! Perspiciatis iure eveniet amet dolorum fuga! Minus quos labore perferendis hic porro atque facilis illo deserunt, quia corporis, quo numquam itaque totam consequatur veniam reprehenderit nemo, minima magni? Delectus rem repudiandae natus ipsum ex! Laboriosam, consequatur porro minus possimus ullam velit, dolores autem consequuntur unde labore fugiat iste commodi! Architecto, minus rem!</div>
+        <footer class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores facere qui obcaecati facilis aperiam eveniet, dolor hic tempora eligendi veniam odio aliquid labore beatae!</footer>
+    </div>
+</body>
+</html>

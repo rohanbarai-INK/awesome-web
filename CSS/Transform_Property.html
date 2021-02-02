@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Properties in CSS</title>
+  </head>
+  <style>
+      /* SET AN UNIVERSAL PROPERTY FOR WHOLE PAGE  */
+      *{margin: 0%;
+      padding: 0%;
+      }
+      .container{display: flex;
+      height: 80vh; background-color: chocolate;
+      justify-content: center;align-items: center;}
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14vw;
+    height: 29vh;
+      border: 2px solid red;
+      border-radius: 13px;
+      background-color: burlywood;
+      transition: all 1s ease-in-out 0.1s;
+      /* WITH THE HELP OF TRANSITION YOU CAN UTILIZE TRANSFORM EFFECTIVELY  */
+    }
+    .box:hover{ 
+        /* SAME AS TRANSITION YOU CAN PUT TRANSFORM PROPERTIES IN HOVER TAG  */
+        transform: rotate(45deg);
+        transform: skew(45deg);/*IT WILL SLIDE TO AN ANGLE*/
+        transform: scale(2);/*IT WILL ZOOM THE SIZE IN 2 OR WHATEVER YOU PUT IN SCALE VALUE*/
+        transform: translateX(123px);/*SLIDE TO X-AXIS*/
+        transform: translateY(123px);/*SLIDE TO Y-AXIS*/
+        transform: translate(123px, 123px);/*SLIDE TO STRAIGHT LINE IF YOU USE SAME VALUE LIKE GRAPH CHART EXPERIMENT TO KNOW MORE*/
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">This is Box</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+/* NAVBAR SECTIONS  */
+#navbar{
+    flex-direction: column;
+}
+/* SECTION SECTIONS  */
+/* SERVICES SECTIONS  */
+#services {
+    display: flex;
+    margin: 13px;
+    flex-direction: column;
+}
+
+ 
+
+video{display: none;}
+.services::before{
+    content: '';
+    background: url('mobile3.jpg') no-repeat center/cover;
+    position: absolute;
+    
+    z-index: -1;
+
+    height: 144vh;
+    width: 100vw;
+}
+/* #mobile1    {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    image-resolution:900px 640px;
+    top: 1265px;
+    z-index: -3;
+} */
+
+/* CLIENT  SECTIONS */
+.client{
+    overflow: hidden;
+    
+}
+.client img{
+    height: 3.5625rem;
+}
+/* CONTACT SECTIONS  */
+/* FOOTER SECTIONS  */
